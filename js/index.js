@@ -162,6 +162,9 @@ function actualizarCarrusel() {
     // style.transition: Hace que el desplazamiento se vea animado y suave.
 }
 
+document.querySelector(".carousel-btn.prev").addEventListener("click", () => moverCarrusel(-1));
+document.querySelector(".carousel-btn.next").addEventListener("click", () => moverCarrusel(1));
+
 // -- RESUMEN DEL CARRUSEL --
 
 // moverCarrusel(direccion): 
