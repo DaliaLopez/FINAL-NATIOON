@@ -1,0 +1,282 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* FUENTES ENLAZADAS */
+@font-face {
+    font-family: 'MiFuente';
+    src: url("../fonts/MiFuente.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'MiFuente2';
+    src: url("../fonts/MiFuente2.ttf") format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    margin-left: 50px;
+}
+
+.favorites-section h1 {
+    font-size: 35px;
+    margin-bottom: 40px;
+    padding: 50px 80px;
+    margin-bottom: -80px;
+}
+
+/* CUANDO NO HAY FAVORITOS */
+.no-favorites-message {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 300px;
+    margin: 50px 0;
+}
+
+.no-favorites-message i {
+    font-size: 60px;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.no-favorites-message p {
+    font-size: 20px;
+    color: #000000;
+    margin-bottom: 30px;
+    text-decoration: none;
+}
+
+.browse-button {
+    display: inline-block;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    color: black;
+    font-size: 25px;
+}
+
+/* ESTILOS DE PRODUCTOS */
+.favorites-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0px;
+    justify-content: center;
+    margin-top: 80px;
+    margin-bottom: 50px;
+}
+.favorites-container h3 {
+    white-space: nowrap;       /* Evita el salto de línea */ 
+    text-overflow: ellipsis;  /* Añade "..." si el texto es muy largo */
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0px 20px 0px 5px;
+    display: block;
+    width: 100%;             
+}
+
+/* BOTÓN PARA QUITAR DE FAVORITOS */
+.remove-favorite-btn {
+    background: none;
+    border-style: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: rgb(0, 0, 0);
+    padding: 0;
+}
+
+/* ESTILOS PARA EL MENÚ CON PRODUCTOS */
+nav ul li a.active {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* AQUÍ EMPIEZA CONTACT US */
+
+.contact-us {
+    text-align: center;
+    padding: 0;
+    background: url("../img/favorites/backgroundfav.jpg") no-repeat center center/cover;
+    color: #fff;
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.contact-title {
+    font-family: "MiFuente", sans-serif;
+    font-size: 70px;
+    text-transform: uppercase;
+    font-style: italic;
+    text-align: left;
+    padding: 0px 120px;
+    color: white;
+    margin-top: 30px;
+}
+
+.contact-title2 {
+    font-family: "MiFuente2", sans-serif;
+    font-size: 70px;
+    text-transform: uppercase;
+    font-style: italic;
+    text-align: left;
+    padding: 0px 120px;
+    color: white;
+}
+
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: -60px;
+}
+
+.contact-text {
+    max-width: 520px;
+    text-align: left;
+    padding-left: 120px;
+    margin-top: 10px;
+}
+
+.contact-infotitle {
+    text-align: left;
+    max-width: 300px;
+    padding-right: 300px;
+    font-weight: bold;
+    font-size: 20px;
+    padding: 0%;
+}
+
+.contact-info {
+    margin-top: -50px;
+    text-align: left;
+    max-width: 800px;
+    padding-right: 350px;
+}
+
+.contact-info p {
+    margin-bottom: 20px;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.input-container input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.8);
+    margin-top: 8px;
+}
+
+.update-btn {
+    display: block;
+    width: 300px;
+    padding: 8px;
+    background: #000000;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px auto 0 auto;
+    text-align: center;
+    margin-top: 20px;
+    color: white;
+}
+
+.update-btn:hover {
+    background: white;
+}
+
+
+/*AQUI EMPIEZA EL FOOTER*/
+
+.footer {
+    background: #111;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer-links {
+    margin: 10px 0;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+/*AQUI EMPIEZA LOS ICONOS*/
+
+.social-icons {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-top: 10px;
+    justify-content: center;
+}
+
+.social-link {
+    color: white;
+    font-size: 24px;
+    transition: color 0.3s ease;
+}
+
+.social-link:hover {
+    color: #8b8b8b;
+}
+
+.social-handle {
+    color: white;
+    font-size: 18px;
+}
+/*BOTON DE FAVORITOS*/
+.favorite-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: #000;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 5px;
+}
+
+.favorite-btn i {
+    transition: color 0.3s ease;
+}
+
+.favorite-btn.active i {
+    color: rgb(0, 0, 0);
+}
+
+.favorite-btn i.fa-solid {
+    color: rgb(0, 0, 0);
+}
+/*FORMULARIO*/
