@@ -1,1 +1,0 @@
-Hola, este archivo será eliminado pero se creó con el fin de que se genere la rama main en nuestro repositorio :D
