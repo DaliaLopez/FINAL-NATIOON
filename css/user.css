@@ -1,0 +1,221 @@
+html {
+    scroll-behavior: smooth;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/* COLOR DE FONDO DE LA PÁGINA USER */
+
+body {
+    background: #ebebeb;
+}
+
+/* CONFIGURACIÓN DEL HEADER */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    padding: 15px 40px;
+    background: #d5d3d3;
+}
+
+.logo img {
+    width: 180px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 50px;
+    margin-left: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.profile-box {
+    background: #b3b3b3;
+    padding: 20px 80px;
+    font-weight: bold;
+    cursor: pointer;
+    position: absolute;
+    right: 0%;
+    align-items: center;
+    gap: 8px;
+}
+
+.profile-box a {
+    text-decoration: none !important;
+    color: black !important;
+}
+
+.profile-box i {
+    font-size: 18px;
+}
+
+/* CONTENIDO DE MAIN */
+main {
+    display: flex;
+    padding: 40px;
+}
+
+/* PARTE IZQUIERDA DE LA PAGINA */
+.ladoizq {
+    width: 250px;
+    padding: 20px;
+    margin-right: 80px;
+    margin-left: 30px;
+}
+
+.ladoizq h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.profile-section {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    gap: 10px;
+    cursor: pointer;
+    padding-bottom: 8px;
+    transition: 0.3s;
+}
+
+.profile-section a {
+    text-decoration: none !important;
+    color: black !important;
+}
+
+.signout {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-weight: bold;
+    cursor: pointer;
+    padding-top: 250px;
+    transition: 0.3s;
+}
+
+.profile-section i,
+.signout i {
+    font-size: 18px;
+}
+
+.signout a {
+    text-decoration: none;
+    color: black;
+}
+
+/* CONTENIDO DEL LADO DERECHO DE LA PÁGINA */
+.profile-content {
+    flex: 1;
+    margin-left: 40px;
+    padding: 30px;
+}
+
+.profile-photo {
+    display: flex;
+    align-content: center;
+    margin-bottom: 30px;
+    gap: 10px;
+}
+
+.profile-photo img {
+    width: 100px;
+    border-radius: 3px;
+}
+
+.profile-photo p {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333; 
+}
+
+.row {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 15px;
+}
+
+.row2 {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 15px;
+    justify-content: space-between;
+}
+
+.info-group {
+    flex: 1;
+}
+
+.info-group label {
+    font-weight: bold;
+    display: block;
+    padding-bottom: 3px;
+}
+
+.info-group p {
+    color: rgba( 0, 0, 0, 0.75);
+}
+
+.info-group input {
+    width: 100%;
+    padding: 10px;
+    border-style: none;
+}
+
+/* ICONO PARA MODIFICAR CONTRASEÑA */
+.info-group i {
+    margin-left: 10px;
+    cursor: pointer;
+}
+
+/* BOTÓN PARA ACTUALIZAR CONTRASEÑA */
+.update-btn {
+    display: block;
+    width: 300px;
+    padding: 8px;
+    background: #d4d4d4;
+    border: none;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    margin: 10px auto 0 auto;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.update-btn:hover {
+    background: white;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.input-container input {
+    flex: 1;
+    padding: 10px;
+    border: none;
+    outline: none;
+}
+
+.input-container i {
+    padding: 10px;
+    cursor: pointer;
+    color: #666;
+}
